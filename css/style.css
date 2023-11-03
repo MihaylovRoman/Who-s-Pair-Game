@@ -1,0 +1,84 @@
+body{
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: #12181f;
+    color: white;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+p{
+    text-align: center;
+    font-size: 1em;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    justify-content: center;
+    gap: 16px;
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: repeat(3, calc(140px / 2 * 3));
+}
+
+.card{
+    height: calc(140px / 2 * 3);
+    width: 140px;
+    border-radius: 15px;
+    background-color: rgb(55, 55, 55);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.front-image{
+    width: 64px;
+    height: 64px;
+}
+.card.flipped{
+    transform: rotateY(180deg);
+}
+.front,
+.back{
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.card .front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card .back{
+    background-image: url("../image/crone.jpg");
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+}
+
+.startButton{
+    border: none;
+    border-radius: 15px;
+    padding: 0.8em 1em;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+.startButton:hover{
+    opacity: 0.8;
+}

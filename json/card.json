@@ -1,0 +1,26 @@
+[
+    {
+        "image": ["../image/apple.png"],
+        "name": "apple"
+    },
+    {
+        "image": ["../image/bluebberries.png"],
+        "name": "bluebberries"
+    },
+    {
+        "image": ["../image/cabbage.png"],
+        "name": "cabbage"
+    },
+    {
+        "image": ["../image/cherry.png"],
+        "name": "cherry"
+    },
+    {
+        "image": ["../image/orange.png"],
+        "name": "orange"
+    },
+    {
+        "image": ["../image/pepper.png"],
+        "name": "pepper"
+    }
+]
